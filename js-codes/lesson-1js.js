@@ -53,28 +53,15 @@ document.getElementById('bLNumber').addEventListener('click',function(){
     bLOnOff++;
 });
 
-var bDOnOff=1;
 document.getElementById('byDigits').addEventListener('click',function(){
-    const element=document.getElementById('bDDisplay');
-    if(bDOnOff%2==1){
-        element.classList.remove('d-none');
-    }
-    else{
-        element.classList.add('d-none');
-    }
-    bDOnOff++;
+
+        document.getElementById('bDDisplay').classList.remove('d-none');
+        document.getElementById('bGDDisplay').classList.add('d-none');
 });
 
-var bGDOnOff=1;
 document.getElementById('byGivenDigits').addEventListener('click',function(){
-    const element=document.getElementById('bGDDisplay');
-    if(bGDOnOff%2==1){
-        element.classList.remove('d-none');
-    }
-    else{
-        element.classList.add('d-none');
-    }
-    bGDOnOff++;
+        document.getElementById('bGDDisplay').classList.remove('d-none');
+        document.getElementById('bDDisplay').classList.add('d-none');
 });
 
 //by digits//

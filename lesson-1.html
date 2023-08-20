@@ -35,39 +35,42 @@
         <!-- biggest number/ lowest number  -->
         <section class="container mx-auto my-5">
             <h1 class="text-center"><button id="bLNumber" class="btn btn-primary">Biggest or Lowest Number</button></h1>
-            <div id="bLDisplay" class="row py-4 my-4 d-none">
-                <div class="col-12 col-md-6 d-flex justify-content-center"><button id="byDigits" class="btn btn-primary">By Digits</button></div>
-                <div class="col-12 col-md-6 d-flex justify-content-center"><button id="byGivenDigits" class="btn btn-primary">By Given digits</button></div>
+            <div id="bLDisplay" class="d-none">
+                <div  class="row py-4 my-4">
+                    <div class="col-12 col-md-6 d-flex justify-content-center"><button id="byDigits" class="btn btn-primary">By Digits</button></div>
+                    <div class="col-12 col-md-6 d-flex justify-content-center"><button id="byGivenDigits" class="btn btn-primary">By Given digits</button></div>
+                </div>
+    
+                <div id="bDDisplay" class="my-2 row d-none d-flex justify-content-center">
+                    <div class="col-6">
+                        <h3 class="mx-auto">Enter number of digits:</h3>
+                        <input id="bDinput" class="mt-3 mx-auto" type="text"><br>
+                        <button id="bDSubmit" class="btn btn-primary my-2 mx-auto">Submit</button>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="mx-auto">/solution:/</h3>
+                        <br>
+                        <h3>Biggest: <span id="biggest"></span></h3>
+                        <h3>Lowest: <span id="lowest"></span></h3>
+                    </div>
+                    <hr>
+                </div>
+                <div id="bGDDisplay" class="my-2 row d-none d-flex justify-content-center">
+                    <div class="col-6">
+                        <h3 class="mx-auto">Enter digits:</h3>
+                        <input id="bGDinput" class="mt-3 mx-auto" type="text"><br>
+                        <button id="bGDSubmit" class="btn btn-primary my-2 mx-auto">Submit</button>
+                    </div>
+                    <div class="col-6">
+                        <h3 class="mx-auto">/solution:/</h3>
+                        <br>
+                        <h3>Biggest: <span id="bGDBiggest"></span></h3>
+                        <h3>Lowest: <span id="bGDLowest"></span></h3>
+                    </div>
+                    <hr>
+                </div>
             </div>
-
-            <div id="bDDisplay" class="my-2 row d-none d-flex justify-content-center">
-                <div class="col-6">
-                    <h3 class="mx-auto">Enter number of digits:</h3>
-                    <input id="bDinput" class="mt-3 mx-auto" type="text"><br>
-                    <button id="bDSubmit" class="btn btn-primary my-2 mx-auto">Submit</button>
-                </div>
-                <div class="col-6">
-                    <h3 class="mx-auto">/solution:/</h3>
-                    <br>
-                    <h3>Biggest: <span id="biggest"></span></h3>
-                    <h3>Lowest: <span id="lowest"></span></h3>
-                </div>
-                <hr>
-            </div>
-            <div id="bGDDisplay" class="my-2 row d-none d-flex justify-content-center">
-                <div class="col-6">
-                    <h3 class="mx-auto">Enter digits:</h3>
-                    <input id="bGDinput" class="mt-3 mx-auto" type="text"><br>
-                    <button id="bGDSubmit" class="btn btn-primary my-2 mx-auto">Submit</button>
-                </div>
-                <div class="col-6">
-                    <h3 class="mx-auto">/solution:/</h3>
-                    <br>
-                    <h3>Biggest: <span id="bGDBiggest"></span></h3>
-                    <h3>Lowest: <span id="bGDLowest"></span></h3>
-                </div>
-                <hr>
-            </div>
+            
         </section>
     </main>
     
